@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link href="http://nec.netease.com/download/framework/reset.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: "Microsoft YaHei"
+		}
+		#app {
+			margin: 30px auto;
+			padding: 30px 50px;
+			width: 700px;
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<sf-select @change="onChange" :disabled="disabled" ref="sel">
+			<sf-option v-for="option in options" :id="option.id" :name="option.name" :disabled="option.disabled">
+				<!-- <span>{{option.id}}-{{option.name}}</span> -->
+		</sf-select>
+		<button @click="changeSelect(options[0])">change</button>
+	</div>
+	<script src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script>
+	<script src="./sfSelect.js"></script>
+	<script src="./sfOption.js"></script>
+	<script>
+		var App = Vue.extend({
+			//template : "#template",
+			data : function(){
+				return {
+					options:[
+						{id: 1, name: 'success', disabled: false},
+						{id: 2, name: 'error'}
+					],
+					defid: 2,
+					disabled: false
+				}
+			},
+			props : {
+				
+			},
+			components : {
+				'sf-select': sfSelect,
+				'sf-option': sfOption
+ 			},
+			methods : {
+				onChange: function(option){
+					
+				},
+				changeSelect(option) {
+					this.$refs.sel.select(option);
+				}
+			}
+		});
+
+		new App().$mount('#app');
+	</script>
+</body>
+</html>
