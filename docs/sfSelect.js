@@ -67,10 +67,10 @@ var sfSelect =
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "D:\\work\\NSFI\\sf-select-2\\src\\select.vue"
+	__vue_options__.__file = "D:\\work\\NSFI\\sf-select\\src\\select.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-2c5d1834"
+	__vue_options__._scopeId = "data-v-5a72662a"
 
 	/* hot reload */
 	if (false) {(function () {
@@ -79,9 +79,9 @@ var sfSelect =
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2c5d1834", __vue_options__)
+	    hotAPI.createRecord("data-v-5a72662a", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-2c5d1834", __vue_options__)
+	    hotAPI.reload("data-v-5a72662a", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] select.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -387,8 +387,8 @@ var sfSelect =
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2c5d1834&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./select.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-2c5d1834&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./select.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5a72662a&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./select.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5a72662a&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./select.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -406,7 +406,7 @@ var sfSelect =
 
 
 	// module
-	exports.push([module.id, "\n.m-select[data-v-2c5d1834] {\n  display: inline-block;\n  position: relative;\n  margin: 0 auto;\n  height: 32px;\n  vertical-align: middle;\n  background: #fafafa;\n  border: 1px solid #ebebeb;\n  border-radius: 2px;\n  box-shadow: 0 1px 2px -3px #000;\n  cursor: pointer;\n}\n.m-select .select-sel[data-v-2c5d1834] {\n    height: 32px;\n    line-height: 32px;\n    padding: 0 50px 0 40px;\n    color: #000;\n    border: none;\n}\n.m-select .select-sel span[data-v-2c5d1834] {\n      line-height: 32px;\n      vertical-align: top;\n}\n.m-select .select-sel.disabled[data-v-2c5d1834] {\n      color: #999;\n      background: #eee;\n      cursor: not-allowed;\n}\n.m-select .select-cnt[data-v-2c5d1834] {\n    position: absolute;\n    top: 36px;\n    left: 0;\n    width: 150px;\n    border: 1px solid #e6eaeb;\n    border-radius: 2px;\n    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);\n    background-color: #fff;\n    z-index: 10;\n}\n.m-select .select-cnt .list[data-v-2c5d1834] {\n      position: relative;\n      max-height: 300px;\n      overflow: hidden;\n      background-color: #fff;\n}\n.m-select .u-icon-down[data-v-2c5d1834] {\n    position: absolute;\n    top: 15px;\n    right: 10px;\n    width: 12px;\n    height: 12px;\n    background: url(/docs/res/img/icon-12.png);\n    background-position: 0 -540px;\n    background-size: 120px auto;\n}\n", ""]);
+	exports.push([module.id, "\n.m-select[data-v-5a72662a] {\n  display: inline-block;\n  position: relative;\n  margin: 0 auto;\n  height: 32px;\n  vertical-align: middle;\n  background: #fafafa;\n  border: 1px solid #ebebeb;\n  border-radius: 2px;\n  box-shadow: 0 1px 2px -3px #000;\n  cursor: pointer;\n}\n.m-select .select-sel[data-v-5a72662a] {\n    height: 32px;\n    line-height: 32px;\n    padding: 0 50px 0 40px;\n    color: #000;\n    border: none;\n}\n.m-select .select-sel span[data-v-5a72662a] {\n      line-height: 32px;\n      vertical-align: top;\n}\n.m-select .select-sel.disabled[data-v-5a72662a] {\n      color: #999;\n      background: #eee;\n      cursor: not-allowed;\n}\n.m-select .select-cnt[data-v-5a72662a] {\n    position: absolute;\n    top: 36px;\n    left: 0;\n    width: 150px;\n    border: 1px solid #e6eaeb;\n    border-radius: 2px;\n    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);\n    background-color: #fff;\n    z-index: 10;\n}\n.m-select .select-cnt .list[data-v-5a72662a] {\n      position: relative;\n      max-height: 300px;\n      overflow: hidden;\n      background-color: #fff;\n}\n.m-select .u-icon-down[data-v-5a72662a] {\n    position: absolute;\n    top: 15px;\n    right: 10px;\n    width: 12px;\n    height: 12px;\n    background: url(/docs/res/img/icon-12.png);\n    background-position: 0 -540px;\n    background-size: 120px auto;\n}\n", ""]);
 
 	// exports
 
@@ -518,9 +518,28 @@ var sfSelect =
 		},
 
 		methods: {
-			toggle: function toggle() {
+			/**
+	   * 展开/折叠下拉列表(主动)
+	   * @param  {boolean} show 
+	   * @return {void}     
+	   */
+			toggle: function toggle(show) {
 				if (this.disabled == true) return;
-				this.isShow = !this.isShow;
+				if (show == undefined) {
+					this.isShow = !this.isShow;
+				} else {
+					this.isShow = show;
+				}
+			},
+
+			/**
+	   * 展开/折叠下拉列表(被动)
+	   * @param  {boolean} show 
+	   * @return {void}     
+	   */
+			onToggle: function onToggle(show) {
+				this.toggle(show);
+				this.$emit('toggle', { show: this.isShow });
 			},
 
 			/**
@@ -530,10 +549,6 @@ var sfSelect =
 	   */
 			select: function select(option) {
 				this.selected = option;
-				this.hide();
-			},
-			hide: function hide() {
-				this.isShow = false;
 			},
 
 			/**
@@ -544,7 +559,7 @@ var sfSelect =
 			onOptionSelect: function onOptionSelect(option) {
 				this.selected = option;
 				this.$emit('change', this.selected);
-				this.hide();
+				this.onToggle(false);
 			}
 		},
 		created: function created() {
@@ -581,7 +596,9 @@ var sfSelect =
 	      "id": selected.id
 	    },
 	    on: {
-	      "click": toggle
+	      "click": function($event) {
+	        onToggle()
+	      }
 	    }
 	  }, [_h('span', [_s(selected.name)]), " ", _m(0)]), " ", _h('div', {
 	    directives: [{
@@ -602,7 +619,7 @@ var sfSelect =
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-2c5d1834", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-5a72662a", module.exports)
 	  }
 	}
 

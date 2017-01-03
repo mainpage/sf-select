@@ -8,7 +8,7 @@
 
 <template>
 	<div class="m-select" ref="select-box">
-		<div class="select-sel" @click="toggle" :id="selected.id" :class="{disabled: disabled}">
+		<div class="select-sel" @click="onToggle()" :id="selected.id" :class="{disabled: disabled}">
 			<span>{{selected.name}}</span>
 			<i class="u-icon-down"></i>
 		</div>
@@ -100,9 +100,27 @@
 			}
 		},
 		methods: {
-			toggle() {
+			/**
+			 * 展开/折叠下拉列表(主动)
+			 * @param  {boolean} show 
+			 * @return {void}     
+			 */
+			toggle(show) {
 				if(this.disabled == true) return;
-				this.isShow = !this.isShow;
+				if(show == undefined){
+					this.isShow = !this.isShow;
+				}else{
+					this.isShow = show;
+				}
+			},
+			/**
+			 * 展开/折叠下拉列表(被动)
+			 * @param  {boolean} show 
+			 * @return {void}     
+			 */
+			onToggle(show){
+				this.toggle(show);
+				this.$emit('toggle', {show: this.isShow});
 			},
 			/**
 			 * 选择某一项(主动)
@@ -111,10 +129,6 @@
 			 */
 			select(option) {
 				this.selected = option;
-				this.hide();
-			},
-			hide() {
-				this.isShow = false;
 			},
 			/**
 			 * 某一项被选中(被动)
@@ -124,7 +138,7 @@
 			onOptionSelect(option) {
 				this.selected = option;
 				this.$emit('change', this.selected);
-				this.hide();
+				this.onToggle(false);
 			}
 		},
 		created() {

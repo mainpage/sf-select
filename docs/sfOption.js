@@ -67,10 +67,10 @@ var sfOption =
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "D:\\work\\NSFI\\sf-select-2\\src\\option.vue"
+	__vue_options__.__file = "D:\\work\\NSFI\\sf-select\\src\\option.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-c3373a42"
+	__vue_options__._scopeId = "data-v-f14c8838"
 
 	/* hot reload */
 	if (false) {(function () {
@@ -79,9 +79,9 @@ var sfOption =
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-c3373a42", __vue_options__)
+	    hotAPI.createRecord("data-v-f14c8838", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-c3373a42", __vue_options__)
+	    hotAPI.reload("data-v-f14c8838", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] option.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -105,8 +105,8 @@ var sfOption =
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c3373a42&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./option.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-c3373a42&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./option.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f14c8838&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./option.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-f14c8838&scoped=true!./../node_modules/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./option.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -124,7 +124,7 @@ var sfOption =
 
 
 	// module
-	exports.push([module.id, "\n.itm[data-v-c3373a42] {\n  height: 28px;\n  padding: 10px 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  word-wrap: normal;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.itm .txt[data-v-c3373a42] {\n    display: inline-block;\n}\n.itm .u-icon-tickblue[data-v-c3373a42] {\n    display: none;\n    width: 14px;\n    height: 14px;\n    margin-left: 5px;\n    background: url(/docs/res/img/icon-14.png);\n    background-size: 120px auto;\n    background-position: 0 -570px;\n}\n.itm.active .u-icon-tickblue[data-v-c3373a42] {\n    display: inline-block;\n}\n.itm.disabled[data-v-c3373a42] {\n    color: #999;\n    background: #eee;\n    cursor: not-allowed;\n}\n", ""]);
+	exports.push([module.id, "\n.itm[data-v-f14c8838] {\n  height: 28px;\n  padding: 10px 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  word-wrap: normal;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.itm .txt[data-v-f14c8838] {\n    display: inline-block;\n}\n.itm .u-icon-tickblue[data-v-f14c8838] {\n    display: none;\n    width: 14px;\n    height: 14px;\n    margin-left: 5px;\n    background: url(/docs/res/img/icon-14.png);\n    background-size: 120px auto;\n    background-position: 0 -570px;\n}\n.itm.active .u-icon-tickblue[data-v-f14c8838] {\n    display: inline-block;\n}\n.itm.disabled[data-v-f14c8838] {\n    color: #999;\n    background: #eee;\n    cursor: not-allowed;\n}\n", ""]);
 
 	// exports
 
@@ -528,7 +528,7 @@ var sfOption =
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-c3373a42", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-f14c8838", module.exports)
 	  }
 	}
 
