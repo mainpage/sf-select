@@ -18,11 +18,11 @@
 </head>
 <body>
 	<div id="app">
-		<sf-select @change="onChange" :disabled="disabled" ref="sel">
+		<sf-select @change="onChange" :defid="defid" :disabled="disabled" ref="sel">
 			<sf-option v-for="option in options" :id="option.id" :name="option.name" :disabled="option.disabled">
 				<!-- <span>{{option.id}}-{{option.name}}</span> -->
 		</sf-select>
-		<button @click="changeSelect(options[0])">change</button>
+		<button @click="changeSelect(options[1])">change</button>
 	</div>
 	<script src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script>
 	<script src="./sfSelect.js"></script>
@@ -33,10 +33,11 @@
 			data : function(){
 				return {
 					options:[
-						{id: 1, name: 'success', disabled: false},
-						{id: 2, name: 'error'}
+						{id: 0, name: '所有状态'},
+						{id: 1, name: '已解决', disabled: false},
+						{id: 2, name: '未解决'}
 					],
-					defid: 2,
+					defid: 0,
 					disabled: false
 				}
 			},

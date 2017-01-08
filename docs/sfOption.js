@@ -124,7 +124,7 @@ var sfOption =
 
 
 	// module
-	exports.push([module.id, "\n.itm[data-v-f14c8838] {\n  height: 28px;\n  padding: 10px 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  word-wrap: normal;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.itm .txt[data-v-f14c8838] {\n    display: inline-block;\n}\n.itm .u-icon-tickblue[data-v-f14c8838] {\n    display: none;\n    width: 14px;\n    height: 14px;\n    margin-left: 5px;\n    background: url(/docs/res/img/icon-14.png);\n    background-size: 120px auto;\n    background-position: 0 -570px;\n}\n.itm.active .u-icon-tickblue[data-v-f14c8838] {\n    display: inline-block;\n}\n.itm.disabled[data-v-f14c8838] {\n    color: #999;\n    background: #eee;\n    cursor: not-allowed;\n}\n", ""]);
+	exports.push([module.id, "\n.itm[data-v-f14c8838] {\n  padding: 8px 10px;\n  box-sizing: border-box;\n  overflow: hidden;\n  word-wrap: normal;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.itm .txt[data-v-f14c8838] {\n    display: inline-block;\n    vertical-align: middle;\n}\n.itm .u-icon-tickblue[data-v-f14c8838] {\n    display: none;\n    width: 14px;\n    height: 14px;\n    margin-left: 5px;\n    vertical-align: middle;\n    background: url(/docs/res/img/icon-14.png);\n    background-size: 120px auto;\n    background-position: 0 -570px;\n}\n.itm[data-v-f14c8838]:hover {\n    background-color: #e8f1f8;\n    color: #62a8ea;\n}\n.itm.active[data-v-f14c8838] {\n    color: #62a8ea;\n}\n.itm.active .u-icon-tickblue[data-v-f14c8838] {\n      display: inline-block;\n}\n.itm.disabled[data-v-f14c8838] {\n    color: #999;\n    background: #eee;\n    cursor: not-allowed;\n}\n", ""]);
 
 	// exports
 
@@ -456,13 +456,19 @@ var sfOption =
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	module.exports = {
 		name: 'sf-option',
 		componentName: 'option',
 		computed: {
 			selected: function selected() {
-				return this.$parent.selected === this;
+				return this.$parent.selected.id == this.id;
 			}
 		},
 		props: {

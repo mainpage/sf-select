@@ -10,8 +10,7 @@
 
 <style type="text/css" lang="sass" scoped>
 	.itm{
-		height: 28px;
-	    padding: 10px 10px;
+	    padding: 8px 10px;
 	    box-sizing: border-box;
 	    overflow: hidden;
 	    word-wrap: normal;
@@ -19,17 +18,24 @@
 	    text-overflow: ellipsis;
 		.txt{
 			display: inline-block;
+			vertical-align: middle;
 		}
 		.u-icon-tickblue{
 			display: none;
 			width: 14px;
 			height: 14px;
 			margin-left: 5px;
+			vertical-align: middle;
 			background: url(/docs/res/img/icon-14.png);
 			background-size: 120px auto;
 			background-position: 0 -570px;
 		}
+		&:hover{
+			background-color: #e8f1f8;
+		    color: #62a8ea;
+		}
 		&.active{
+		    color: #62a8ea;
 			.u-icon-tickblue{
 				display: inline-block;
 			}
@@ -47,7 +53,7 @@
 		componentName: 'option',
 		computed: {
 			selected: function(){
-				return this.$parent.selected === this;
+				return this.$parent.selected.id == this.id;
 			}
 		},
 		props: {
