@@ -8,7 +8,7 @@
 
 <template>
 	<div class="m-select" ref="select-box">
-		<div class="select-sel" @click="onToggle()" :id="selected.id" :class="{disabled: disabled}">
+		<div class="select-sel" @mousedown="_onToggle($event)" :id="selected.id" :class="{disabled: disabled}">
 			<span>{{selected.name}}</span>
 			<i class="u-icon-down"></i>
 		</div>
@@ -112,15 +112,16 @@
 				}else{
 					this.isShow = show;
 				}
+				this.$emit('toggle', {show: this.isShow});
 			},
 			/**
 			 * 展开/折叠下拉列表(被动)
+			 * @param {event} event 
 			 * @param  {boolean} show 
 			 * @return {void}     
 			 */
-			onToggle(show){
+			_onToggle(event, show){
 				this.toggle(show);
-				this.$emit('toggle', {show: this.isShow});
 			},
 			/**
 			 * 选择某一项(主动)
@@ -135,14 +136,19 @@
 			 * @param  {object} option 选中项
 			 * @return {void}        
 			 */
-			onOptionSelect(option) {
+			_onOptionSelect(option) {
 				this.selected = option;
 				this.$emit('change', this.selected);
-				this.onToggle(false);
+				this.toggle(false);
 			}
 		},
 		created() {
-			this.$on('selectOption', this.onOptionSelect);
+			document.addEventListener('mousedown', (e) => {
+				if(!this.$refs['select-box'].contains(e.target)){
+					this.toggle(false);
+				}
+			})
+			this.$on('selectOption', this._onOptionSelect);
 			this.$nextTick(function(){
 				var option = this.$children.filter(function(item){
 					return item.id === this.defid;

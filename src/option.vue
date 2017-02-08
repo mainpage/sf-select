@@ -1,6 +1,6 @@
 
 <template>
-	<li :id="id" class="itm" @click="selectOption()" :class="{active: selected, disabled: disabled}" >
+	<li :id="id" class="itm" @click="_selectOption()" :class="{active: selected, disabled: disabled}" >
 		<slot>
 			<span class="txt">{{name}}</span>
 			<i class="u-icon-tickblue"></i>
@@ -68,7 +68,7 @@
 			return {};
 		},
 		methods: {
-			selectOption() {
+			_selectOption() {
 				if(this.disabled) return;
 				this.dispatch('select', 'selectOption', this);
 			},

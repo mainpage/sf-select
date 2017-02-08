@@ -22,6 +22,10 @@
 			<sf-option v-for="option in options" :id="option.id" :name="option.name" :disabled="option.disabled">
 				<!-- <span>{{option.id}}-{{option.name}}</span> -->
 		</sf-select>
+		<sf-select @change="onChange" :defid="defid" :disabled="disabled" ref="sel">
+			<sf-option v-for="option in options" :id="option.id" :name="option.name" :disabled="option.disabled">
+				<span>{{option.id}}-{{option.name}}</span>
+		</sf-select>
 		<button @click="changeSelect(options[1])">change</button>
 	</div>
 	<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
