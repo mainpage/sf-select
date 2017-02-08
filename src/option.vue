@@ -26,7 +26,7 @@
 			height: 14px;
 			margin-left: 5px;
 			vertical-align: middle;
-			background: url(/docs/res/img/icon-14.png);
+			background: url(./res/img/icon-14.png);
 			background-size: 120px auto;
 			background-position: 0 -570px;
 		}

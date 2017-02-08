@@ -71,7 +71,7 @@
 	        right: 10px;
 	        width: 12px;
 	        height: 12px;
-	        background: url(/docs/res/img/icon-12.png);
+	        background: url(./res/img/icon-12.png);
 	        background-position: 0 -540px;
 	        background-size: 120px auto;
 	    }
