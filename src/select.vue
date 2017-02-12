@@ -145,14 +145,15 @@
 				this.selected = option;
 				this.$emit('change', this.selected);
 				this.toggle(false);
+			},
+			_onMousedown(event){
+				if(!this.$refs['select-box'].contains(event.target)){
+					this.toggle(false);
+				}
 			}
 		},
 		created() {
-			document.addEventListener('mousedown', (e) => {
-				if(!this.$refs['select-box'].contains(e.target)){
-					this.toggle(false);
-				}
-			})
+			document.addEventListener('mousedown', this._onMousedown);
 			this.$on('selectOption', this._onOptionSelect);
 			this.$nextTick(function(){
 				var option = this.$children.filter(function(item){
@@ -166,6 +167,9 @@
 					}
 				}
 			});
+		},
+		destroyed(){
+			document.removeEventListener('mousedown', this._onMousedown);
 		}
 	}
 </script>
