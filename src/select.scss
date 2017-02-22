@@ -1,0 +1,111 @@
+/**
+ *=========================================
+ * 基础变量
+ *=========================================
+ */
+
+
+
+
+/**
+ *=========================================
+ * sf-select
+ *=========================================
+ */
+.m-select{
+	    display: inline-block;
+	    position: relative;
+	    margin: 0 auto;
+	    height: 32px;
+	    vertical-align: middle;
+	    background: #fafafa;
+	    border: 1px solid #ebebeb;
+	    border-radius: 2px;
+	    box-shadow: 0 1px 2px -3px #000;
+	    cursor: pointer;
+	    font-size: 14px;
+	    ul{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    .select-sel{
+	        height: 32px;
+	    	line-height: 32px;
+	        padding: 0 50px 0 40px;
+	        color: #000;
+	        border: none;
+	        span{
+	            line-height: 32px;
+	            vertical-align: top;
+	        }
+	        &.disabled{
+	        	color: #999;
+	        	background: #eee;
+	        	cursor: not-allowed;
+	        }
+	    }
+	    .select-cnt{
+	        position: absolute;
+	        top: 36px;
+	        left: 0;
+	        width: 150px;
+	        border: 1px solid #e6eaeb;
+	        border-radius: 2px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	        background-color: #fff;
+	        z-index: 10;
+	        .list{
+	            position: relative;
+	            max-height: 300px;
+	            overflow: hidden;
+	            background-color: #fff;
+	        }
+		    .itm{
+		        padding: 8px 10px;
+		        box-sizing: border-box;
+		        overflow: hidden;
+		        word-wrap: normal;
+		        white-space: nowrap;
+		        text-overflow: ellipsis;
+		    	.txt{
+		    		display: inline-block;
+		    		vertical-align: middle;
+		    	}
+		    	.u-icon-tickblue{
+		    		display: none;
+		    		width: 14px;
+		    		height: 14px;
+		    		margin-left: 5px;
+		    		vertical-align: middle;
+		    		background: url(./res/img/icon-14.png);
+		    		background-size: 120px auto;
+		    		background-position: 0 -570px;
+		    	}
+		    	&:hover{
+		    		background-color: #e8f1f8;
+		    	    color: #62a8ea;
+		    	}
+		    	&.active{
+		    	    color: #62a8ea;
+		    		.u-icon-tickblue{
+		    			display: inline-block;
+		    		}
+		    	}
+		    	&.disabled{
+		    		color: #999;
+		    		background: #eee;
+		    		cursor: not-allowed;
+		    	}
+		    }
+	    }
+	    .u-icon-down{
+	        position: absolute;
+	        top: 15px;
+	        right: 10px;
+	        width: 12px;
+	        height: 12px;
+	        background: url(./res/img/icon-12.png);
+	        background-position: 0 -540px;
+	        background-size: 120px auto;
+	    }
+	}

@@ -8,45 +8,6 @@
 	</li>
 </template>
 
-<style type="text/css" lang="sass" scoped>
-	.itm{
-	    padding: 8px 10px;
-	    box-sizing: border-box;
-	    overflow: hidden;
-	    word-wrap: normal;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
-		.txt{
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.u-icon-tickblue{
-			display: none;
-			width: 14px;
-			height: 14px;
-			margin-left: 5px;
-			vertical-align: middle;
-			background: url(./res/img/icon-14.png);
-			background-size: 120px auto;
-			background-position: 0 -570px;
-		}
-		&:hover{
-			background-color: #e8f1f8;
-		    color: #62a8ea;
-		}
-		&.active{
-		    color: #62a8ea;
-			.u-icon-tickblue{
-				display: inline-block;
-			}
-		}
-		&.disabled{
-			color: #999;
-			background: #eee;
-			cursor: not-allowed;
-		}
-	}
-</style>
 <script type="text/javascript">
 	module.exports = {
 		name: 'sf-option',
