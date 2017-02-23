@@ -21,7 +21,6 @@
 </template>
 
 <script>
-	require('./select.scss');
 	module.exports = {
 		name: 'sf-select',
 		componentName: 'select',
