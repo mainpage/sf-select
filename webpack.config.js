@@ -15,7 +15,7 @@ module.exports =  {
     module: {
         loaders: [
             {test: /.vue/, loader: 'vue'},
-            /*{test: /\.js$/, loader: 'babel', exclude: /node_modules/},*/
+            {test: /\.js$/, loader: 'babel', exclude: /node_modules/},
             {test: /.html/, loader: 'html'},
 			{test: /.scss$/,  loader: "style!css!sass" },
             {test: /\.(png|jpg)$/,loader: 'url?limit=40000'}
